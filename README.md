@@ -26,13 +26,46 @@
 >
 > #### 💙 Generative AI on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7030732108612423681)
 
-# Your best AI pair programmer
+# Level up your developer experience with Genie
 
-- ➕ Use GPT-4, GPT-3.5, GPT3 or Codex models via your OpenAI API Key
-- 📃 Get streaming answers to your prompt in editor or sidebar conversation
+- 🆕💬 Store your conversation history on your disk and continue at any time.
+- 🔁 See diff between your code and Genie's suggestion right within editor with one click.
+- 👤 Rename and personalize your assistant.
+- 📃 Get streaming answers to your prompt in editor or sidebar conversation.
 - 🔥 Streaming conversation support and stop the response to save your tokens.
 - 📝 Create files or fix your code with one click or with keyboard shortcuts.
 - ➡️ Export all your conversation history at once in Markdown format.
+- ➕ Use GPT-4, GPT-3.5, GPT3 or Codex models via your OpenAI API Key.
+
+# 📣 What's new?
+
+<details open>
+  <summary><strong> Save your conversations and continue at any time</strong></summary>
+
+1. Conversation history
+
+- The goal: Collect feedback and measure the compatibility across different machine, OS setups.
+- We are experimenting a new feature to help you store your conversations in your disk using VS Code global storage API.
+- You need to opt-in to use this feature as this is experimental to collect feedback from the users. Setting name: `genieai.enableConversationHistory`
+- With this experimental feature, keep in mind this feature has limitations at the moment and may have bugs, use it at your own risk.
+- You may want to remove the stored files manually for privacy from time to time, extension doesn't have any way to modify the files other than writing new threads to files.
+- All conversations start with name 'New chat' and you can change it in `genie.json` file.
+- The conversations are stored only on your machine, using VS Code's provided global storage API for extensions.
+
+2. Misc. bug fixes and improvements
+
+> ### Conversation history - Demo
+>
+> ---
+>
+> <a href="https://www.loom.com/share/1a57be874e5d4ec099493cc68ed31e04">
+> <p>Genie - ChatGPT Conversation History - Watch Video</p>
+>  <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1a57be874e5d4ec099493cc68ed31e04-with-play.gif">
+> </a>
+
+</details>
+
+---
 
 # Get Started
 
@@ -101,6 +134,15 @@ The extension comes with context menu commands, copy/move suggested code into ed
 - `Genie: Export conversation`: Exports the whole conversation in Markdown for you to easily store and find the Q&A list.
 
 # Troubleshooting
+
+## FAQ
+
+- Re-enter API key: use `Genie: Clear API Key` command. Click `Commands` on the home page to see all commands available
+- Proxy support: See this issue to enable local proxy: #7
+- Usage in Remote environments: See this issue about remote/SSH: #3
+- Unable To Use GPT-4 Models: You need GPT-4 API Access (Different than GPT-4 on ChatGPT Plus subscription) #6
+
+## Common Issues
 
 - It's possible that OpenAI systems may experience issues responding to your queries due to high-traffic from time to time.
 - If you get `HTTP 429 Too Many Requests`, it means that you are making Too Many Requests. Please wait and try again in a few moments. If it persists, restart your vs-code.
