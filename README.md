@@ -79,7 +79,7 @@ See below for the models that are available via API:
 | Available model    | Description                                                                                                                               | Max token | Knowledge |
 | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :-------- | :-------- |
 | gpt-4              | More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat.                                               | 8,192     | Sep 2021  |
-| gpt-4-32k          | Same capabilities as the base gpt-4 mode but with 4x the context length.                                                                  | 4,096     | Sep 2021  |
+| gpt-4-32k          | Same capabilities as the base gpt-4 mode but with 4x the context length.                                                                  | 32,768     | Sep 2021  |
 | gpt-3.5-turbo      | Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of `text-davinci-003`.                                               | 4,096     | Sep 2021  |
 | gpt-3.5-turbo-0301 | Snapshot of `gpt-3.5-turbo` from March 1st 2023.                                                                                          | 4,096     | Sep 2021  |
 | text-davinci-003   | Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. | 4,000     | Jun 2021  |
