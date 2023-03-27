@@ -69,35 +69,43 @@
 
 # Get Started
 
-Get your API Key from here: [OpenAI](https://beta.openai.com/account/api-keys)
+Get your API Key from here: [OpenAI](https://beta.openai.com/account/api-keys) and see OpenAI official docs for available [model details](https://platform.openai.com/docs/models)
 
 1. Simply ask any coding question by selecting a code fragment.
 2. Once asked, provide your API Key.
-
-See below for the models that are available via API:
-
-| Available model    | Description                                                                                                                               | Max token | Knowledge |
-| :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :-------- | :-------- |
-| gpt-4              | More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat.                                               | 8,192     | Sep 2021  |
-| gpt-4-32k          | Same capabilities as the base gpt-4 mode but with 4x the context length.                                                                  | 4,096     | Sep 2021  |
-| gpt-3.5-turbo      | Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of `text-davinci-003`.                                               | 4,096     | Sep 2021  |
-| gpt-3.5-turbo-0301 | Snapshot of `gpt-3.5-turbo` from March 1st 2023.                                                                                          | 4,096     | Sep 2021  |
-| text-davinci-003   | Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. | 4,000     | Jun 2021  |
-| text-davinci-002   | Similar capabilities to `text-davinci-003` but trained with supervised fine-tuning instead of reinforcement learning                      | 4,000     | Jun 2021  |
-| code-davinci-002   | Optimized for code-completion tasks                                                                                                       | 4,000     | Jun 2021  |
-| code-cushman-001   | Almost as capable as Davinci Codex, but slightly faster. This speed advantage may make it preferable for real-time applications.          | 2,048     |           |
 
 ## Features
 
 The extension comes with context menu commands, copy/move suggested code into editor with one-click, conversation window and customization options for OpenAI's ChatGPT prompts.
 
-- 📤 Export all your conversation history with one click
-- Ad-hoc prompt prefixes for you to customize what you are asking ChatGPT
+- 💬 Store your conversation history on your disk and continue at any time.
+
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/convo-history.png" alt="Genie: Conversation History" style="max-height:480px;">
+
+- 🔁 See diff between your code and Genie's suggestion right within editor with one click.
+
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/diff.png" alt="Genie: Diff" style="max-height:480px;">
+
+- 📃 Get streaming answers to your prompt in editor or sidebar conversation.
+
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/streaming.png" alt="Genie: Streaming" style="max-height:480px;">
+
 - Customize what you are asking with the selected code. The extension will remember your prompt for subsequent questions.
+
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/context-menu.png" alt="Genie: Context menu options" style="max-height:480px;">
+
 - Automatic partial code response detection. If AI doesn't finish responding, you will have the option to continue and combine answers
+
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/incomplete.png" alt="Genie: Partial response detection" style="max-height:480px;">
+
+- Copy or insert the code ChatGPT is suggesting right into your editor.
+
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/home-page.png" alt="Genie: Home page" style="max-height:480px;">
+
 - 🍻 Optimized for dialogue
 - Edit and resend a previous prompt
-- Copy or insert the code ChatGPT is suggesting right into your editor.
+- 📤 Export all your conversation history with one click
+- Ad-hoc prompt prefixes for you to customize what you are asking ChatGPT
 
 ## Customization
 
@@ -132,15 +140,16 @@ The extension comes with context menu commands, copy/move suggested code into ed
 - `Genie: Reset session`: Clears the current session and resets your connection with ChatGPT
 - `Genie: Clear conversation`: Clears the conversation window and resets the thread to start a new conversation with ChatGPT.
 - `Genie: Export conversation`: Exports the whole conversation in Markdown for you to easily store and find the Q&A list.
+- `Genie: Focus on Genie View`: Focuses on Genie window if it was hidden. You can move Genie window to right sidebar or bottom bar by dragging the Genie icon.
 
 # Troubleshooting
 
 ## FAQ
 
 - Re-enter API key: use `Genie: Clear API Key` command. Click `Commands` on the home page to see all commands available
-- Proxy support: See this issue to enable local proxy: #7
-- Usage in Remote environments: See this issue about remote/SSH: #3
-- Unable To Use GPT-4 Models: You need GPT-4 API Access (Different than GPT-4 on ChatGPT Plus subscription) #6
+- Proxy support: See this issue to enable local proxy: https://github.com/ai-genie/chatgpt-vscode/issues/7
+- Usage in Remote environments: See this issue about remote/SSH: https://github.com/ai-genie/chatgpt-vscode/issues/3
+- Unable To Use GPT-4 Models: You need GPT-4 API Access (Different than GPT-4 on ChatGPT Plus subscription) https://github.com/ai-genie/chatgpt-vscode/issues/6
 
 ## Common Issues
 
