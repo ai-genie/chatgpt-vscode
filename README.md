@@ -80,27 +80,27 @@ The extension comes with context menu commands, copy/move suggested code into ed
 
 - 💬 Store your conversation history on your disk and continue at any time.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/convo-history.png" alt="Genie: Conversation History" style="max-height:480px;">
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/convo-history.png" alt="Genie: Conversation History" style="max-width: 100%;max-height: 480px;">
 
 - 🔁 See diff between your code and Genie's suggestion right within editor with one click.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/diff.png" alt="Genie: Diff" style="max-height:480px;">
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/diff.png" alt="Genie: Diff" style="max-width: 100%;max-height: 480px;">
 
 - 📃 Get streaming answers to your prompt in editor or sidebar conversation.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/streaming.png" alt="Genie: Streaming" style="max-height:480px;">
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/streaming.png" alt="Genie: Streaming" style="max-width: 100%;max-height: 480px;">
 
 - Customize what you are asking with the selected code. The extension will remember your prompt for subsequent questions.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/context-menu.png" alt="Genie: Context menu options" style="max-height:480px;">
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/context-menu.png" alt="Genie: Context menu options" style="max-width: 100%;max-height: 480px;">
 
 - Automatic partial code response detection. If AI doesn't finish responding, you will have the option to continue and combine answers
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/incomplete.png" alt="Genie: Partial response detection" style="max-height:480px;">
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/incomplete.png" alt="Genie: Partial response detection" style="max-width: 100%;max-height: 480px;">
 
 - Copy or insert the code ChatGPT is suggesting right into your editor.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/home-page.png" alt="Genie: Home page" style="max-height:480px;">
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/home-page.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
 
 - 🍻 Optimized for dialogue
 - Edit and resend a previous prompt
