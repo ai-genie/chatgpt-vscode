@@ -100,12 +100,14 @@ The extension comes with context menu commands, copy/move suggested code into ed
 
 - Copy or insert the code ChatGPT is suggesting right into your editor.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/home-page.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/diff-copy-insert.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
 
 - 🍻 Optimized for dialogue
 - Edit and resend a previous prompt
 - 📤 Export all your conversation history with one click
 - Ad-hoc prompt prefixes for you to customize what you are asking ChatGPT
+
+  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/home-page.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
 
 ## Customization
 
