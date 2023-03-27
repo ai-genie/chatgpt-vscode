@@ -74,7 +74,7 @@ Get your API Key from here: [OpenAI](https://beta.openai.com/account/api-keys) a
 1. Simply ask any coding question by selecting a code fragment.
 2. Once asked, provide your API Key.
 
-## Features
+# Features
 
 The extension comes with context menu commands, copy/move suggested code into editor with one-click, conversation window and customization options for OpenAI's ChatGPT prompts.
 
