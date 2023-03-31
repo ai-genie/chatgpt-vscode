@@ -167,13 +167,14 @@ We recently introduced Genie to `Problems` window. You can investigate your comp
 
 ## FAQ
 
-- For general FAQ please visit OpenAI's own page: https://help.openai.com/en/articles/7039783-chatgpt-api-faq
-- How can I clear or re-enter API key: use `Genie: Clear API Key` command. Click `Commands` on the home page to see all commands available. You can also click on `Change API Key` on the home page.
-- Is the ChatGPT API included in the ChatGPT Plus subscription? - No, the ChatGPT API and ChatGPT Plus subscription are billed separately.
-- Can I view the API Key after storing it? VS Code secrets storage won't allow you to read the API Key after storing it. You may clear or reenter another key if you are facing issues.
-- Proxy support: See this issue to enable local proxy: https://github.com/ai-genie/chatgpt-vscode/issues/7
-- Usage in Remote environments: See this issue about remote/SSH: https://github.com/ai-genie/chatgpt-vscode/issues/3
-- Unable To Use GPT-4 Models: You need GPT-4 API Access (Different than GPT-4 on ChatGPT Plus subscription) https://github.com/ai-genie/chatgpt-vscode/issues/6
+- **For general FAQ please visit OpenAI's own page**: https://help.openai.com/en/articles/7039783-chatgpt-api-faq
+- **How can I clear or re-enter API key**: use `Genie: Clear API Key` command. Click `Commands` on the home page to see all commands available. You can also click on `Change API Key` on the home page.
+- **Editor view uses text-davinci-003**: It's by design at the moment since it's the only model that can guarantee a code response and the view doesn't need a conversational context. Please follow this issue for details [#24](https://github.com/ai-genie/chatgpt-vscode/issues/24)
+- **Is the ChatGPT API included in the ChatGPT Plus subscription?**: No, the ChatGPT API and ChatGPT Plus subscription are billed separately.
+- **Can I view the API Key after storing it?**: VS Code secrets storage won't allow you to read the API Key after storing it. You may clear or reenter another key if you are facing issues.
+- **Does Genie support proxies**: See this issue to enable local proxy: https://github.com/ai-genie/chatgpt-vscode/issues/7
+- **Usage in Remote environments**: See this issue about remote/SSH: https://github.com/ai-genie/chatgpt-vscode/issues/3
+- **Unable To Use GPT-4 Models**: You need GPT-4 API Access (Different than GPT-4 on ChatGPT Plus subscription) https://github.com/ai-genie/chatgpt-vscode/issues/6
 
 ## Common Issues
 
