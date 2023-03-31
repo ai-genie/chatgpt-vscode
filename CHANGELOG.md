@@ -2,6 +2,20 @@
 
 All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode) extension will be documented in this file.
 
+## 🆕 [V0.0.5] 💡 Quick fix problems - 2022-03-31
+
+- Ask Genie to quick fix the problems that you see in your code
+- Click on the lightbulb on a code piece where you see underlined error
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/quick-fix.png" alt="Genie: Quick fix" style="max-width: 100%;max-height: 240px;">
+
+## 🆕 [V0.0.4] 💬 Save your conversations and continue at any time - 2022-03-27
+
+- Show conversations button is now always visible on the home page for discoverability.
+- Various UX Improvements.
+- You can change API Key directly from home page
+- Updated documentation and added screenshots of the features available
+
 ## 🆕 [V0.0.3] - 2022-03-25
 
 ### 1. Conversation history

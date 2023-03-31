@@ -29,6 +29,7 @@
 # Level up your developer experience with Genie
 
 - 🆕💬 Store your conversation history on your disk and continue at any time.
+- 🆕💡 Use Genie in Problems window to explain and suggest fix for compile-time errors.
 - 🔁 See diff between your code and Genie's suggestion right within editor with one click.
 - 👤 Rename and personalize your assistant.
 - 📃 Get streaming answers to your prompt in editor or sidebar conversation.
@@ -40,7 +41,17 @@
 # 📣 What's new?
 
 <details open>
-  <summary><strong> Save your conversations and continue at any time</strong></summary>
+  <summary><strong> 💡 Quick fix problems</strong></summary>
+
+- Ask Genie to quick fix the problems that you see in your code
+- Click on the lightbulb on a code piece where you see underlined error
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/quick-fix.png" alt="Genie: Quick fix" style="max-width: 100%;max-height: 240px;">
+
+</details>
+
+<details open>
+  <summary><strong> 💬 Save your conversations and continue at any time</strong></summary>
 
 1. Conversation history
 
@@ -74,40 +85,48 @@ Get your API Key from here: [OpenAI](https://beta.openai.com/account/api-keys) a
 1. Simply ask any coding question by selecting a code fragment.
 2. Once asked, provide your API Key.
 
+> If you face issues regarding your API Key, see [FAQ](#faq) for details on how to reenter/clear it
+
 # Features
 
 The extension comes with context menu commands, copy/move suggested code into editor with one-click, conversation window and customization options for OpenAI's ChatGPT prompts.
 
+We recently introduced Genie to `Problems` window. You can investigate your compile-time errors asking Genie. Simply click on Lightbulb/suggestion icon to ask Genie to help you. The credits for this idea goes to @cahaseler; if you are interested in seeing his Genie-companion extension visit [this issue](https://github.com/ai-genie/chatgpt-vscode/issues/31)
+
 - 💬 Store your conversation history on your disk and continue at any time.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/convo-history.png" alt="Genie: Conversation History" style="max-width: 100%;max-height: 480px;">
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/convo-history.png" alt="Genie: Conversation History" style="max-width: 100%;max-height: 480px;">
+
+- 💡 Quick fix the problems in your code
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/quick-fix.png" alt="Genie: Quick fix" style="max-width: 100%;max-height: 480px;">
 
 - 🔁 See diff between your code and Genie's suggestion right within editor with one click.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/diff.png" alt="Genie: Diff" style="max-width: 100%;max-height: 480px;">
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/diff.png" alt="Genie: Diff" style="max-width: 100%;max-height: 480px;">
 
 - 📃 Get streaming answers to your prompt in editor or sidebar conversation.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/streaming.png" alt="Genie: Streaming" style="max-width: 100%;max-height: 480px;">
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/streaming.png" alt="Genie: Streaming" style="max-width: 100%;max-height: 480px;">
 
 - Customize what you are asking with the selected code. The extension will remember your prompt for subsequent questions.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/context-menu.png" alt="Genie: Context menu options" style="max-width: 100%;max-height: 480px;">
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/context-menu.png" alt="Genie: Context menu options" style="max-width: 100%;max-height: 480px;">
 
 - Automatic partial code response detection. If AI doesn't finish responding, you will have the option to continue and combine answers
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/incomplete.png" alt="Genie: Partial response detection" style="max-width: 100%;max-height: 480px;">
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/incomplete.png" alt="Genie: Partial response detection" style="max-width: 100%;max-height: 480px;">
 
 - Copy or insert the code ChatGPT is suggesting right into your editor.
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/diff-copy-insert.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/diff-copy-insert.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
 
 - 🍻 Optimized for dialogue
 - Edit and resend a previous prompt
 - 📤 Export all your conversation history with one click
 - Ad-hoc prompt prefixes for you to customize what you are asking ChatGPT
 
-  <img src="https://github.com/ai-genie/chatgpt-vscode/blob/main/images/home-page.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/home-page.png" alt="Genie: Home page" style="max-width: 100%;max-height: 480px;">
 
 ## Customization
 
@@ -148,7 +167,10 @@ The extension comes with context menu commands, copy/move suggested code into ed
 
 ## FAQ
 
-- Re-enter API key: use `Genie: Clear API Key` command. Click `Commands` on the home page to see all commands available
+- For general FAQ please visit OpenAI's own page: https://help.openai.com/en/articles/7039783-chatgpt-api-faq
+- How can I clear or re-enter API key: use `Genie: Clear API Key` command. Click `Commands` on the home page to see all commands available. You can also click on `Change API Key` on the home page.
+- Is the ChatGPT API included in the ChatGPT Plus subscription? - No, the ChatGPT API and ChatGPT Plus subscription are billed separately.
+- Can I view the API Key after storing it? VS Code secrets storage won't allow you to read the API Key after storing it. You may clear or reenter another key if you are facing issues.
 - Proxy support: See this issue to enable local proxy: https://github.com/ai-genie/chatgpt-vscode/issues/7
 - Usage in Remote environments: See this issue about remote/SSH: https://github.com/ai-genie/chatgpt-vscode/issues/3
 - Unable To Use GPT-4 Models: You need GPT-4 API Access (Different than GPT-4 on ChatGPT Plus subscription) https://github.com/ai-genie/chatgpt-vscode/issues/6
