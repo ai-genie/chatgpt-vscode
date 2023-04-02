@@ -28,8 +28,9 @@
 
 # Level up your developer experience with Genie
 
-- 🆕💬 Store your conversation history on your disk and continue at any time.
-- 🆕💡 Use Genie in Problems window to explain and suggest fix for compile-time errors.
+- ✨ Use your own Azure OpenAI Service deployments
+- 💬 Store your conversation history on your disk and continue at any time.
+- 💡 Use Genie in Problems window to explain and suggest fix for compile-time errors.
 - 🔁 See diff between your code and Genie's suggestion right within editor with one click.
 - 👤 Rename and personalize your assistant.
 - 📃 Get streaming answers to your prompt in editor or sidebar conversation.
@@ -39,6 +40,28 @@
 - ➕ Use GPT-4, GPT-3.5, GPT3 or Codex models via your OpenAI API Key.
 
 # 📣 What's new?
+
+<details open>
+  <summary><strong> ✨ Azure OpenAI Service support & more</strong></summary>
+
+1. Azure OpenAI Service
+
+- You can now use your Azure OpenAI deployments with Genie
+- Set your full Azure OpenAI deployment URL in setting: `genieai.azure.url` following the instructions mentioned in the setting description
+- Ensure to set the extension's model setting to the right base model you used for Azure deployment
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/azure-oai.png" alt="Genie: Azure OpenAI Service setting" style="max-width: 100%;max-height: 240px;">
+
+2. Rename and remove your conversations within sidebar
+
+- You don't need to update the `genie.json` file to update your conversation's name.
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/rename-conversation.png" alt="Genie: Rename conversation" style="max-width: 100%;max-height: 240px;">
+
+3. Improved autoscroll behaviour
+
+- Autoscroll will be disabled if you interrupt the stream
+</details>
 
 <details open>
   <summary><strong> 💡 Quick fix problems</strong></summary>
@@ -101,6 +124,10 @@ We recently introduced Genie to `Problems` window. You can investigate your comp
 
   <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/quick-fix.png" alt="Genie: Quick fix" style="max-width: 100%;max-height: 480px;">
 
+- ✨ Supports Azure OpenAI Service
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/azure-oai.png" alt="Genie: Azure OpenAI Service setting" style="max-width: 100%;max-height: 240px;">
+
 - 🔁 See diff between your code and Genie's suggestion right within editor with one click.
 
   <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/diff.png" alt="Genie: Diff" style="max-width: 100%;max-height: 480px;">
@@ -130,6 +157,8 @@ We recently introduced Genie to `Problems` window. You can investigate your comp
 
 ## Customization
 
+> You may assign a keyboard shortcut to any of the following commands using VS Code's built-in keybindings menu.
+
 - You can enable/disable all of your context menu items. Simply go to settings and find the prompt that you would like to disable. Custom prompts are hidden by default.
 - `Genie: Ad-hoc prompt`: Ad-hoc custom prompt prefix for the selected code. Right click on a selected block of code, run command.
   - You will be asked to fill in your preferred custom prefix and the extension will remember that string for your subsequent ad-hoc queries.
@@ -157,6 +186,9 @@ We recently introduced Genie to `Problems` window. You can investigate your comp
 ## Other available commands
 
 - `Genie: Clear API Key`: Clears the API Key from VS Code [Secrets Storage](https://code.visualstudio.com/api/references/vscode-api#SecretStorage)
+- `Genie: Show conversations`: List of conversations that Genie stored after enabling conversation history setting.
+- `Genie: What's new`: See what is recently released.
+- `Genie: Start a new chat`: Start a new chat with AI.
 - `Genie: Ask anything`: Free-form text questions within conversation window.
 - `Genie: Reset session`: Clears the current session and resets your connection with ChatGPT
 - `Genie: Clear conversation`: Clears the conversation window and resets the thread to start a new conversation with ChatGPT.
@@ -175,13 +207,14 @@ We recently introduced Genie to `Problems` window. You can investigate your comp
 - **Does Genie support proxies**: See this issue to enable local proxy: https://github.com/ai-genie/chatgpt-vscode/issues/7
 - **Usage in Remote environments**: See this issue about remote/SSH: https://github.com/ai-genie/chatgpt-vscode/issues/3
 - **Unable To Use GPT-4 Models**: You need GPT-4 API Access (Different than GPT-4 on ChatGPT Plus subscription) https://github.com/ai-genie/chatgpt-vscode/issues/6
+- **Azure OpenAI Service: Unsupported data type Error**: This means you didn't select the right base model for your Azure OpenAI service. Make sure to select the base GPT model you used to create your Azure OpenAI Service deployment
 
 ## Common Issues
 
 - It's possible that OpenAI systems may experience issues responding to your queries due to high-traffic from time to time.
-- If you get `HTTP 429 Too Many Requests`, it means that you are making Too Many Requests. Please wait and try again in a few moments. If it persists, restart your vs-code.
+- If you get `HTTP 429 Too Many Requests`, it means that you are either making too many requests OR your account doesn't have enough credit. Your account may also have expired.
 
-  - This could be due to `insufficient_quota` on your OpenAI account. You could run the following cURL command to check if your account has enough quota. (Make sure to replace `$OPENAI_API_KEY` with your key that you use in this extension)
+  - If you see `insufficient_quota` in the error, you could run the following cURL command to check if your account has enough quota. (Make sure to replace `$OPENAI_API_KEY` with your key that you use in this extension)
 
   ```bash
     curl https://api.openai.com/v1/completions \

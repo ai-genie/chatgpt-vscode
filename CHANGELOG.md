@@ -2,14 +2,34 @@
 
 All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode) extension will be documented in this file.
 
-## 🆕 [V0.0.5] 💡 Quick fix problems - 2022-03-31
+## 🆕 [V0.0.7] ✨ Azure OpenAI Service support & more - 2022-04-02
+
+#### 1. Azure OpenAI Service
+
+- You can now use your Azure OpenAI deployments with Genie
+- Set your full Azure OpenAI deployment URL in setting: `genieai.azure.url` following the instructions mentioned in the setting description
+- Ensure to set the extension's model setting to the right base model you used for Azure deployment
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/azure-oai.png" alt="Genie: Azure OpenAI Service setting" style="max-width: 100%;max-height: 240px;">
+
+#### 2. Rename and remove your conversations within sidebar
+
+- You don't need to update the `genie.json` file to update your conversation's name.
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/rename-conversation.png" alt="Genie: Rename conversation" style="max-width: 100%;max-height: 240px;">
+
+#### 3. Improved autoscroll behaviour
+
+- Autoscroll will be disabled if you interrupt the stream
+
+## [V0.0.5] 💡 Quick fix problems - 2022-03-31
 
 - Ask Genie to quick fix the problems that you see in your code
 - Click on the lightbulb on a code piece where you see underlined error
 
   <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/quick-fix.png" alt="Genie: Quick fix" style="max-width: 100%;max-height: 240px;">
 
-## 🆕 [V0.0.4] 💬 Save your conversations and continue at any time - 2022-03-27
+## [V0.0.4] 💬 Save your conversations and continue at any time - 2022-03-27
 
 - Show conversations button is now always visible on the home page for discoverability.
 - Various UX Improvements.
