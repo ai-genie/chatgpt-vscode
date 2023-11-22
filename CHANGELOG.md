@@ -2,7 +2,19 @@
 
 All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode) extension will be documented in this file.
 
-## 🆕 [V0.0.7] ✨ Azure OpenAI Service support & more - 2022-04-02
+## [V0.0.9] ⏫ GPT-4 & GPT-3.5 Turbo models added
+
+### Updated model selection
+
+- You can now use gpt-4-1106-preview (GPT-4 Turbo) and gpt-3.5-turbo-1106 (GPT-3.5 Turbo) via Genie.
+- New models include: `gpt-4-1106-preview`, `gpt-4-0613`, `gpt-4-32k-0613`, `gpt-3.5-turbo-1106`, `gpt-3.5-turbo-16k`, `gpt-3.5-turbo-instruct`
+- Deprecated `gpt-4-0314`, `gpt-4-32k-0314`, `gpt-3.5-turbo-0301` in favor of the [replacement models](https://platform.openai.com/docs/models).
+
+#### Misc.
+
+- Updated HTTP 429 error description for more clarity
+
+## [V0.0.7] ✨ Azure OpenAI Service support & more - 2023-04-02
 
 #### 1. Azure OpenAI Service
 
@@ -15,6 +27,7 @@ All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?
 #### 2. Rename and remove your conversations within sidebar
 
 - You don't need to update the `genie.json` file to update your conversation's name.
+- Rename or remove your conversation at ease using built-in Genie functions.
 
   <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/rename-conversation.png" alt="Genie: Rename conversation" style="max-width: 100%;max-height: 240px;">
 
@@ -22,21 +35,21 @@ All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?
 
 - Autoscroll will be disabled if you interrupt the stream
 
-## [V0.0.5] 💡 Quick fix problems - 2022-03-31
+## [V0.0.5] 💡 Quick fix problems - 2023-03-31
 
 - Ask Genie to quick fix the problems that you see in your code
 - Click on the lightbulb on a code piece where you see underlined error
 
   <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/quick-fix.png" alt="Genie: Quick fix" style="max-width: 100%;max-height: 240px;">
 
-## [V0.0.4] 💬 Save your conversations and continue at any time - 2022-03-27
+## [V0.0.4] 💬 Save your conversations and continue at any time - 2023-03-27
 
 - Show conversations button is now always visible on the home page for discoverability.
 - Various UX Improvements.
 - You can change API Key directly from home page
 - Updated documentation and added screenshots of the features available
 
-## 🆕 [V0.0.3] - 2022-03-25
+## 🆕 [V0.0.3] - 2023-03-25
 
 ### 1. Conversation history
 
@@ -63,7 +76,7 @@ All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?
 
 ---
 
-## [0.0.1] - 2022-03-20
+## [0.0.1] - 2023-03-20
 
 ### New home for the most popular VS Code ChatGPT extension
 

@@ -42,6 +42,17 @@
 # 📣 What's new?
 
 <details open>
+  <summary><strong> ⏫ GPT-4 & GPT-3.5 Turbo models added</strong></summary>
+
+1. Updated model selection
+
+- You can now use gpt-4-1106-preview (GPT-4 Turbo) and gpt-3.5-turbo-1106 (GPT-3.5 Turbo) via Genie.
+- New models include: `gpt-4-1106-preview`, `gpt-4-0613`, `gpt-4-32k-0613`, `gpt-3.5-turbo-1106`, `gpt-3.5-turbo-16k`, `gpt-3.5-turbo-instruct`
+- Deprecated `gpt-4-0314`, `gpt-4-32k-0314`, `gpt-3.5-turbo-0301` in favor of the [replacement models](https://platform.openai.com/docs/models).
+
+</details>
+
+<details open>
   <summary><strong> ✨ Azure OpenAI Service support & more</strong></summary>
 
 1. Azure OpenAI Service
@@ -214,6 +225,7 @@ We recently introduced Genie to `Problems` window. You can investigate your comp
 - It's possible that OpenAI systems may experience issues responding to your queries due to high-traffic from time to time.
 - If you get `HTTP 429 Too Many Requests`, it means that you are either making too many requests OR your account doesn't have enough credit. Your account may also have expired.
 
+  - [Please check your plan and billing details](https://platform.openai.com/usage)
   - If you see `insufficient_quota` in the error, you could run the following cURL command to check if your account has enough quota. (Make sure to replace `$OPENAI_API_KEY` with your key that you use in this extension)
 
   ```bash
@@ -243,7 +255,7 @@ We recently introduced Genie to `Problems` window. You can investigate your comp
 
 - There is no guarantee that the extension will continue to work as-is without any issues or side-effects. Please use it at your own risk.
 - This extension never uses/stores your personally identifiable information.
-- This extension collects metadata to improve its features. No personally identifiable information is collected. You can opt-out from telemetry either by setting the global 'telemetry.telemetryLevel' or 'genieai.telemetry.disable'. The extension will respect both of these settings and will collect metadata only if both allow telemetry. We use the official telemetry package provided by the vscode team [here](https://github.com/Microsoft/vscode-extension-telemetry) to understand this extension's usage patterns to better plan new feature releases.
+- If you would like to help us improve our features please enable the telemetry in the settings. It's disabled by default but if you enable it, it will start collecting metadata to improve its features. No personally identifiable information is collected. You can opt-out from telemetry either by setting the global 'telemetry.telemetryLevel' or by setting 'genieai.telemetry.disable' to true(Disabled by default). The extension will respect both of these settings and will collect metadata only if both allow telemetry. We use the official telemetry package provided by the vscode team [here](https://github.com/Microsoft/vscode-extension-telemetry) to understand this extension's usage patterns to better plan new feature releases.
 - We assume no responsibility of any issues that you may face using this extension. Your use of OpenAI services is subject to OpenAI's [Privacy Policy](https://openai.com/privacy/) and [Terms of Use](https://openai.com/terms/).
 - 💻 OpenAI: https://openai.com/
 - 🧪 Uses [NodeJS OpenAI API wrapper](https://github.com/transitive-bullshit/chatgpt-api)
