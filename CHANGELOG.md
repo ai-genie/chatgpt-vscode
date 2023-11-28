@@ -2,6 +2,26 @@
 
 All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode) extension will be documented in this file.
 
+## [V0.0.10] ⚡ Generate commit messages - 2023-11-28
+
+- Generate commit messages right within VS Code:
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/generate-commit-messages.png" alt="Genie: Generate commit messages" style="max-width: 100%;max-height: 240px;">
+
+- You can update your commit message prompt from the extension settings. You may also opt-out if you prefer to use other commit message generators.
+- `Genie: Generate a commit message` command and shortcut supports multi-folder workspaces.
+
+### Misc.
+
+- Update your generate commit message prompt: `genieai.promptPrefix.commit-message`
+- Opt-out of the Quick Fix actions setting is added: `genieai.quickFix.enable`
+- Opt-out of the Generate Commit Message functionality: `genieai.enableGenerateCommitMessage`
+- All of Genie's context menu items are now wrapped under `Genie` submenu
+
+<img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/genie-submenu.png" alt="Genie: submenu" style="max-width: 100%;max-height: 240px;">
+
+---
+
 ## [V0.0.9] ⏫ GPT-4 & GPT-3.5 Turbo models added
 
 ### Updated model selection

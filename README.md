@@ -29,6 +29,7 @@
 # Level up your developer experience with Genie
 
 - ✨ Use your own Azure OpenAI Service deployments
+- ⚡ Generate commit messages from your git changes
 - 💬 Store your conversation history on your disk and continue at any time.
 - 💡 Use Genie in Problems window to explain and suggest fix for compile-time errors.
 - 🔁 See diff between your code and Genie's suggestion right within editor with one click.
@@ -40,6 +41,27 @@
 - ➕ Use GPT-4, GPT-3.5, GPT3 or Codex models via your OpenAI API Key.
 
 # 📣 What's new?
+
+<details open>
+  <summary><strong> ⚡ Generate commit messages functionality added</strong></summary>
+
+- Generate commit messages right within VS Code:
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/generate-commit-messages.png" alt="Genie: Generate commit messages" style="max-width: 100%;max-height: 240px;">
+
+- You can update your commit message prompt from the extension settings. You may also opt-out if you prefer to use other commit message generators.
+- `Genie: Generate a commit message` command and shortcut supports multi-folder workspaces.
+
+  ### Misc.
+
+- All of Genie's context menu items are now wrapped under `Genie` submenu
+- Update your generate commit message prompt: `genieai.promptPrefix.commit-message`
+- Opt-out of the Quick Fix actions setting is added: `genieai.quickFix.enable`
+- Opt-out of the Generate Commit Message functionality: `genieai.enableGenerateCommitMessage`
+
+  <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/genie-submenu.png" alt="Genie: submenu" style="max-width: 100%;max-height: 240px;">
+
+</details>
 
 <details open>
   <summary><strong> ⏫ GPT-4 & GPT-3.5 Turbo models added</strong></summary>
