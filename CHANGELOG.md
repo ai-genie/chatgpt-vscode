@@ -2,6 +2,13 @@
 
 All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode) extension will be documented in this file.
 
+## [V0.0.11] GPT-4o and 2024 model updates - Revive Editor View - 2024-06-14
+
+- Use 2024 OpenAI models including `gpt-4o`, `gpt-4o-2024-05-13`, `gpt-4-turbo`, `gpt-4-turbo-2024`, `gpt-4-turbo-preview`, `gpt-4-0125-preview`
+- Editor View is now fixed and uses your selected model instead of legacy models.
+- Fixed Genie: Generate commit message problems due to vscode updating its APIs
+- Added new menu item to run Genie: Generate commit message command
+
 ## [V0.0.10] ⚡ Generate commit messages - 2023-11-28
 
 - Generate commit messages right within VS Code:

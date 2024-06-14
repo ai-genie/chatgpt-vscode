@@ -28,6 +28,7 @@
 
 # Level up your developer experience with Genie
 
+- ➕ Use GPT-4o and other improved models via your own OpenAI API Key.
 - ✨ Use your own Azure OpenAI Service deployments
 - ⚡ Generate commit messages from your git changes
 - 💬 Store your conversation history on your disk and continue at any time.
@@ -38,9 +39,19 @@
 - 🔥 Streaming conversation support and stop the response to save your tokens.
 - 📝 Create files or fix your code with one click or with keyboard shortcuts.
 - ➡️ Export all your conversation history at once in Markdown format.
-- ➕ Use GPT-4, GPT-3.5, GPT3 or Codex models via your OpenAI API Key.
 
 # 📣 What's new?
+
+<details open>
+  <summary><strong> ⏫ GPT-4o & 2024 Models available</strong></summary>
+
+- You can now use gpt-4o and other 2024 models with improved maxTokens.
+- New models include: `gpt-4o`, `gpt-4o-2024-05-13`, `gpt-4-turbo`, `gpt-4-turbo-2024`, `gpt-4-turbo-preview`, `gpt-4-0125-preview`
+- Editor View is now fixed and uses your selected model instead of legacy models.
+- Fixed Genie: Generate commit message problems due to vscode updating its APIs.
+- Added new menu item to run Genie: Generate commit message command.
+
+</details>
 
 <details open>
   <summary><strong> ⚡ Generate commit messages functionality added</strong></summary>
@@ -54,10 +65,10 @@
 
   ### Misc.
 
-- All of Genie's context menu items are now wrapped under `Genie` submenu
 - Update your generate commit message prompt: `genieai.promptPrefix.commit-message`
 - Opt-out of the Quick Fix actions setting is added: `genieai.quickFix.enable`
 - Opt-out of the Generate Commit Message functionality: `genieai.enableGenerateCommitMessage`
+- All of Genie's context menu items are now wrapped under `Genie` submenu
 
   <img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/genie-submenu.png" alt="Genie: submenu" style="max-width: 100%;max-height: 240px;">
 
