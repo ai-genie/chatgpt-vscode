@@ -43,6 +43,15 @@
 # 📣 What's new?
 
 <details open>
+  <summary><strong> 🌞 Custom system message & o1-mini and o1-preview models</strong></summary>
+
+- Added a new setting to customize the system message / context that starts your conversation with the AI.
+- Update the `genieai.systemMessage` setting to customize your system message.
+- You can now use o1-mini and o1-preview models. **Please note that these new models have usage tier limitations. See [Usage tiers](https://platform.openai.com/docs/guides/rate-limits/usage-tiers).**
+
+</details>
+
+<details open>
   <summary><strong> ⏫ GPT-4o & 2024 Models available</strong></summary>
 
 - You can now use gpt-4o and other 2024 models with improved maxTokens.
@@ -53,7 +62,7 @@
 
 </details>
 
-<details open>
+<details>
   <summary><strong> ⚡ Generate commit messages functionality added</strong></summary>
 
 - Generate commit messages right within VS Code:

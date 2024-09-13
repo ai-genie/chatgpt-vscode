@@ -2,6 +2,11 @@
 
 All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode) extension will be documented in this file.
 
+## [V0.0.12] 🌞 Custom system message & o1-mini and o1-preview models - 2024-09-13
+
+- Added a new setting to customize the system message / context that starts your conversation with the AI.
+- You can now use o1-mini and o1-preview models. **Please note that these new models have usage tier limitations. See [Usage tiers](https://platform.openai.com/docs/guides/rate-limits/usage-tiers).**
+
 ## [V0.0.11] GPT-4o and 2024 model updates - Revive Editor View - 2024-06-14
 
 - Use 2024 OpenAI models including `gpt-4o`, `gpt-4o-2024-05-13`, `gpt-4-turbo`, `gpt-4-turbo-2024`, `gpt-4-turbo-preview`, `gpt-4-0125-preview`
