@@ -2,6 +2,13 @@
 
 All notable changes to the [ChatGPT](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode) extension will be documented in this file.
 
+## [V0.0.13] 🪄 Generate commit message is now in navigation - 2024-09-15
+
+- Made adjustment to support o1\* models.
+- Added a quick navigation icon in Source Control window for quickly generating commit messages off of staged changes.
+
+<img src="https://raw.githubusercontent.com/ai-genie/chatgpt-vscode/main/images/wand.png" alt="Genie: Generate commit message" style="max-width: 100%;max-height: 240px;">
+
 ## [V0.0.12] 🌞 Custom system message & o1-mini and o1-preview models - 2024-09-13
 
 - Added a new setting to customize the system message / context that starts your conversation with the AI.
