@@ -2,6 +2,11 @@
 remote_theme: mmistakes/minimal-mistakes
 title: "Genie AI: ChatGPT in VS Code"
 description: "A Visual Studio Code - ChatGPT Integration. Prompt OpenAI's GPT-4, GPT-3.5, GPT-3 and Codex models within Visual Studio Code. Your best AI pair programmer in VS Code."
+
 plugins:
   - jemoji
   - jekyll-include-cache
+
+github_username: ai-genie
+minimal_mistakes_skin: mint
+search: true
