@@ -24,7 +24,7 @@
 >
 > #### ❤️ ChatGPT the pair programmer - VS Code on [Youtube](https://www.youtube.com/watch?v=zWTU9xH6T70)
 >
-> #### 💙 Generative AI on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7030732108612423681)
+> #### 💚 Generative AI on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7030732108612423681)
 
 # Level up your developer experience with Genie
 
